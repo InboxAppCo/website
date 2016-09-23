@@ -1,4 +1,4 @@
-FROM inboxappco/base:master
+FROM inboxappco/node:master
 
 ADD . .
 
