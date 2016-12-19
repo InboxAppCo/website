@@ -6,32 +6,82 @@
 	font-style: normal;
 }
 
+body * {
+  transition: 0.5s;
+}
 
 body {
-  	font-family:'Conv_Effra-Regular',Sans-Serif;
+  	font-family: Sans-Serif;
     min-height: 100vh;
     position: relative;
+
 }
 
 #background-curtain {
     position: absolute;
     z-index: -100;
-    background-color: #FFC302;
-    height: 60%;
+    background-image: linear-gradient(-179deg, #17C27D 0%, #1DD9C2 100%);  
+    height: 100%;
     min-height: 560px;
     width: 100%;
 }
+
 .container {
-  padding-top: 50px;
+  /*padding-top: 50px;*/
+  height: 100%;
+
 }
 
-nav.row > div > * {
+nav {
+  position: fixed;
+  background-color: #17C37F;
+  padding: 0px 50px;
+  /*width: 80%;*/
+  /*margin: auto;*/
+  width: 100%; 
+  z-index: 100;
+}
+
+nav > div {
+    border-bottom: 1px white solid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+
+nav >div>div > * {
   display: inline-block;
 }
 
 nav #logo{
   height: 42px;
   margin-right: 10px;
+}
+nav .logo {
+  width: 60%;
+}
+nav .login-link {
+  width: 40%;
+}
+
+nav .login-link a{
+  /*background-color: #FFC22D;*/
+  padding: 10px 33px;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+  margin-left: 14px;
+
+}
+
+nav .login-link a:hover{
+  color: #fff;
+  text-decoration: none;
+  background-color: #FFC22D;
+  border: 2px solid #FFC22D;
 }
 
 nav h1 {
@@ -50,26 +100,29 @@ nav #beta-badge {
   height: 12px;
 }
 #main {
-  margin-top: 20px;
+  margin-top: 150px;
+  /*height: 100%;*/
+
+
 }
 #main > div:nth-child(1){
-  padding-top: 115px;
+  padding-top: 20px;
 }
 
 #main h2 {
   /* Chatrooms for everyt: */
-  font-family:'Conv_Effra-Regular',Sans-Serif;
-  font-size: 54px;
+  font-family: 'Conv_Effra-Regular';
+  font-size: 110px;
   color: #FFFFFF;
-  line-height: 41px;
+  line-height: 0.9em;
   margin-bottom: 16px;
+  font-weight: 600;
 }
 #main h3 {
   /* Join a chatroom and: */
-  font-family:'Conv_Effra-Regular',Sans-Serif;
-  font-size: 16px;
+  font-size: 20px;
   color: #FFFFFF;
-  line-height: 18px;
+  margin-top: 30px;
   margin-bottom: 24px;
 }
 #main #badges img {
@@ -78,23 +131,22 @@ nav #beta-badge {
 #main #badges img:nth-child(1){
   margin-right: 14px;
 }
-
+#phones-pic {
+  margin: 80px auto;
+}
 footer{
-  padding: 0.5em 0;
+  /*padding: 20px 0;*/
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #FF2D55;
+  background-color: black;
   color: #fff;
-  z-index: -2000;
-  font-weight: 200;
+  z-index: 20;
   text-align: center;
   padding: 0;
+  font-size: 12px;
 }
 
-footer span {
-  /*padding: 0 1em;*/
-}
 
 footer * {
   display: inline;
@@ -110,7 +162,22 @@ footer p {
   /*color: #FF2D55;*/
 }
 
+
+
+canvas {
+  cursor: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  z-index: -100;
+}
+
 @media (max-width: 767.99999px){
+  nav {
+      padding: 0px 15px;
+  }
+
   #phones-pic {
     margin-top: 20px;
   }
