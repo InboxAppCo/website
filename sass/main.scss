@@ -6,6 +6,9 @@
 	font-style: normal;
 }
 
+$black: #303030;
+$white: rgb(244,244,244);
+
 body * {
   transition: 0.5s;
 }
@@ -14,13 +17,12 @@ body {
   	font-family: Sans-Serif;
     min-height: 100vh;
     position: relative;
-
 }
 
 #background-curtain {
     position: absolute;
     z-index: -100;
-    background-image: linear-gradient(-179deg, #17C27D 0%, #1DD9C2 100%);  
+    background-image: linear-gradient(-179deg, #17C27D 0%, #1DD9C2 100%);
     height: 100%;
     min-height: 560px;
     width: 100%;
@@ -34,7 +36,7 @@ nav {
   position: fixed;
   background-color: #17C37F;
   padding: 0px 50px;
-  width: 100%; 
+  width: 100%;
   z-index: 100;
 
   & > div {
@@ -49,45 +51,50 @@ nav {
 }
 
 
-
-nav #logo{
-  height: 42px;
-  margin-right: 10px;
-}
 nav .logo {
   width: 60%;
+	#logo {
+		height: 42px;
+		margin-right: 10px;
+	}
+	h1 {
+		position: relative;
+		margin-right: 6px;
+		font-size: 22px;
+		font-weight: 500;
+		color: $white;
+		letter-spacing: -0.03em;
+		margin-top: 0;
+		margin-bottom: 0;
+		top: 4px;
+		@media (max-width: 767.9999px){
+			// font-weight:
+			font-size: 13px;
+		}
+	}
 }
+
 nav .login-link {
+
   width: 40%;
+
+	a {
+		padding: 10px 33px;
+		font-size: 17px;
+		color: $white;
+		border-radius: 100px;
+		border: 2px solid $white;
+		transition: 0.3s;
+		margin-left: 14px;
+	}
 }
 
-nav .login-link a{
-  /*background-color: #FFC22D;*/
-  padding: 10px 33px;
-  font-size: 17px;
-  color: #fff;
-  border-radius: 100px;
-  border: 2px solid #fff;
-  transition: 0.3s;
-  margin-left: 14px;
-
-}
 
 nav .login-link a:hover{
-  color: #fff;
+  color: $white;
   text-decoration: none;
   background-color: #FFC22D;
   border: 2px solid #FFC22D;
-}
-
-nav h1 {
-  position: relative;
-  margin-right: 6px;
-  font-size: 16px;
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 0;
-  top: 4px;
 }
 
 nav #beta-badge {
@@ -97,7 +104,9 @@ nav #beta-badge {
 }
 
 section#main {
+	// cursor: none;
   margin-top: 150px;
+	margin-bottom: 180px;
   //first child
   & > div:nth-child(1){
     padding-top: 20px;
@@ -106,7 +115,8 @@ section#main {
   h2 {
     font-family: 'Conv_Effra-Regular';
     font-size: 110px;
-    color: #FFFFFF;
+    color: $white;
+		letter-spacing: -0.02em;
     line-height: 0.9em;
     margin-bottom: 16px;
     font-weight: 600;
@@ -114,9 +124,9 @@ section#main {
 
   h3{
     font-size: 20px;
-    color: #FFFFFF;
+    color: $white;
     margin-top: 30px;
-    margin-bottom: 24px;    
+    margin-bottom: 24px;
   }
 }
 
@@ -135,7 +145,7 @@ footer{
   bottom: 0;
   width: 100%;
   background-color: black;
-  color: #fff;
+  color: $white;
   z-index: 20;
   text-align: center;
   padding: 0;
@@ -161,8 +171,8 @@ footer{
 }
 
 section.signup{
-  background-color: #000;
-  height: 400px;
+  background-color: $black;
+  height: 200px;
 }
 
 canvas {
@@ -178,17 +188,16 @@ canvas {
   nav {
       padding: 0px 15px;
   }
-
   #phones-pic {
     margin-top: 20px;
   }
-  #main > div:nth-child(1){
+  section#main > div:nth-child(1){
     padding-top: 40px;
   }
-  #main h2{
+  section#main h2{
     font-size: 45px;
   }
-  #main #badges img {
+  section#main #badges img {
     height: 32px;
   }
 }

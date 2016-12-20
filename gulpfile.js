@@ -49,8 +49,8 @@ gulp.task('compress', function(){
 
 gulp.task('watch', function(){
   gulp.watch('sass/*.scss',['sass']);
-  gulp.watch('scripts/*.js', ['lint']);
-  // gulp.watch('gulpfile.js', ['lint']);
+  // gulp.watch('scripts/*.js', ['lint']);
+  gulp.watch('gulpfile.js', ['lint']);
   gulp.watch('scripts/*.js', ['compress']);
   gulp.watch('images/*.+(png|jpg|gif|svg)', ['images']);
 });

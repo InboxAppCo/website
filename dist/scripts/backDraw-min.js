@@ -1,1 +1,0 @@
-function setup(){createCanvas(displayWidth,displayHeight)}function draw(){clear(),particles.push(createVector(mouseX,mouseY)),particles.length>10&&particles.splice(0,1),noFill(),stroke("#FFC81C"),strokeWeight(4),beginShape();for(var e=0;e<particles.length;e++)curveVertex(particles[e].x,particles[e].y);endShape()}var particles=[];

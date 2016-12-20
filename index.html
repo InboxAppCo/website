@@ -17,34 +17,6 @@
 	<meta property="fb:app_id"               content="1377136119169766" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/main.css">
-
-<script type="text/javascript">
-            (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
-branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8');
-            function sendSMS(form) {
-                var phone = form.phone.value;
-                var linkData = {
-                    tags: [],
-                    channel: 'Website',
-                    feature: 'TextMeTheApp',
-                    data: {
-                        'foo': 'bar'
-                    }
-                };
-                var options = {};
-                var callback = function(err, result) {
-                    if (err) {
-                        alert("Sorry, something went wrong.");
-                    }
-                    else {
-                        alert("SMS sent!");
-                    }
-                };
-                branch.sendSMS(phone, linkData, options, callback);
-                form.phone.value = "";
-            }
-        </script>
-
 </head>
 
 <body>
@@ -92,15 +64,8 @@ branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8');
   </div>
 
 
-      <section class="signup">
-      <form onsubmit="sendSMS(this); return false;">
-          <input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
-          <br/>
-          <input type="submit"/>
-      </form>
-    </section>
 
-    
+
 
   <footer class="footer">
     <div class="row">
@@ -113,7 +78,10 @@ branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8');
 
   <!-- body content ends -->
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-	<script src="dist/scripts/retina.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.0/retina.min.js"></script>
+  <script>
+    retinajs();
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script>
   <script src="dist/scripts/backDraw.js"></script>
 </body>
