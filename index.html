@@ -5,7 +5,7 @@
   <!-- Inbox Messenger at 2016 Sep. -->
   <meta charset="utf-8">
   <title>Inbox Messenger</title>
-	<link rel='shortcut icon' href='assets/logo.png' type='image/x-icon'/ >
+	<link rel='shortcut icon' href='dist/images/logo.png' type='image/x-icon'/ >
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:url"                content="http://www.inboxtheapp.com" />
@@ -13,10 +13,38 @@
 	<meta property="og:title"              content="Inbox Messenger" />
 	<meta property="og:site_name"          content="Inbox Messenger" />
 	<meta property="og:description"        content="Inbox is a chatrooms app for talking about anything with anyone, instantly. Join chatrooms with friends and friends-of-friends to meet new people and talk about what's going on now." />
-	<meta property="og:image"              content="https://www.inboxtheapp.com/assets/web_preview_image.jpg" />
+	<meta property="og:image"              content="https://www.inboxtheapp.com/dist/images/web_preview_image.jpg" />
 	<meta property="fb:app_id"               content="1377136119169766" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="dist/css/main.css">
+
+<script type="text/javascript">
+            (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8');
+            function sendSMS(form) {
+                var phone = form.phone.value;
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function(err, result) {
+                    if (err) {
+                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                form.phone.value = "";
+            }
+        </script>
+
 </head>
 
 <body>
@@ -28,9 +56,8 @@
       <div>
 
         <div class="logo text-left">
-          <img src="assets/logo.png" id="logo" data-rjs="3"/>
+          <img src="dist/images/logo.png" id="logo" data-rjs="3"/>
           <span><h1>Inbox Messenger</h1></span>
-          <!-- <img src="assets/beta badge.png" id="beta-badge" data-rjs="3"/> -->
         </div>
 
         <div class="login-link text-right">
@@ -44,39 +71,50 @@
 
   <div class="container">
 
-
-
-    <section id="main" class="row text-center">
+    <section id="main" class="row text-left">
       <div class="col-xs-12">
         <h2>Chatrooms for Everything</h2>
         <h3>Join a chatroom and talk about anything with anyone, instantly.</h3>
         <div id="badges">
-          <a href="http://inbx.in/1Isazkp" target="_blank"><img src="assets/google-play-badge.png" data-rjs="3"/></a>
-          <a href="http://inbx.in/1xfjFQ7" target="_blank"><img src="assets/download links.png" data-rjs="3"/></a>
+          <a href="http://inbx.in/1Isazkp" target="_blank"><img src="dist/images/google-play-badge.png" data-rjs="3"/></a>
+          <a href="http://inbx.in/1xfjFQ7" target="_blank"><img src="dist/images/download links.png" data-rjs="3"/></a>
         </div>
       </div>
 
-      <div class="col-xs-12">
-        <img src="assets/phones.png" id="phones-pic" class="img-responsive" data-rjs="3">
+      <div class="col-xs-12 text-right">
+        <img src="dist/images/devices.png" id="phones-pic" class="img-responsive" data-rjs="3">
       </div>
 
     </section>
+
+
+
   </div>
+
+
+      <section class="signup">
+      <form onsubmit="sendSMS(this); return false;">
+          <input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
+          <br/>
+          <input type="submit"/>
+      </form>
+    </section>
+
+    
 
   <footer class="footer">
     <div class="row">
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>General Information</h6><p>info@inboxtheapp.com</p></span>
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Press</h6><p>press@inboxtheapp.com</p></span>
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Support</h6><p>support@inboxtheapp.com</p></span>
+      <span class="col-xs-12 col-sm-6 col-md-3"><h6>General</h6><p><a href="mailto:info@inboxtheapp.com">info@inboxtheapp.com</a></p></span>
+      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Press</h6><p><a href="mailto:press@inboxtheapp.com">press@inboxtheapp.com</a></p></span>
+      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Support</h6><p><a href="mailto:support@inboxtheapp.com">support@inboxtheapp.com</a></p></span>
       <span class="col-xs-12 col-sm-6 col-md-3">© 2016 Inbox inc. All rights reserved</span>
     </div>
   </footer>
 
   <!-- body content ends -->
-	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-	<script src="scripts/retina.min.js"></script>
-  <script src="script.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script>
-  <script src="scripts/backDraw.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+	<script src="dist/scripts/retina.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script>
+  <script src="dist/scripts/backDraw.js"></script>
 </body>
 </html>
