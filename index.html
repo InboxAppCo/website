@@ -5,7 +5,7 @@
   <!-- Inbox Messenger at 2016 Sep. -->
   <meta charset="utf-8">
   <title>Inbox Messenger</title>
-	<link rel='shortcut icon' href='dist/images/logo.png' type='image/x-icon'/ >
+	<link rel='shortcut icon' href='dist/images/logo.png' type='image/x-icon'/>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:url"                content="http://www.inboxtheapp.com" />
@@ -17,6 +17,7 @@
 	<meta property="fb:app_id"               content="1377136119169766" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/main.css">
+  <!-- <script src=" /> -->
 </head>
 
 <body>
@@ -80,11 +81,33 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.0/retina.min.js"></script>
   <script type="text/javascript">
+      module = {};
       (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})
       (window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
       branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8')
-      branch.banner()
-      console.log('hi')
+      branch.banner({
+        icon: 'https://media.inboxtheapp.com/us-east-1/media/ebf2a92b-0de1-454f-8685-8e67248fa7f8',
+        title: 'Inbox Messenger',
+    		openAppButtonText: 'Open',
+    		downloadAppButtonText: 'Download',
+    		sendLinkText: 'Send Link',
+        description: 'Download the app to create chatrooms',
+        showiOS: true,
+        showiPad: true,
+        showAndroid: true,
+        showBlackberry: false,
+        showWindowsPhone: false,
+        showKindle: false,
+        showDesktop: true,
+        iframe: true,
+        disableHide: false,
+        forgetHide: 1,
+        respectDNT: false,
+        mobileSticky: true,
+        desktopSticky: true,
+        make_new_link: false,
+        open_app: false,
+    })
   </script>
   <script>
     retinajs();
