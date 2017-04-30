@@ -47,8 +47,6 @@ a:hover {
 
 
 
-
-
 //SECTION SPECIFIC
 //...............
 
@@ -121,17 +119,47 @@ section.splash-screen {
 			height: 40px;
 			margin-left: 7px;
 		}
+
 	}
+
+	.web-app-btns {
+		position: absolute;
+		top: 24px;
+		height: 40px;
+		right: 180px;
+		margin-right: 20px;
+		z-index: 100;
+		@media (max-width: 767.99999999px){
+			right: 4px;
+		}
+
+		button {
+			padding-left: 20px;
+			padding-right: 20px;
+			display: inline-block;
+			height: 100%;
+			border: none;
+			background-color: transparent;
+			color: $white;
+			transition: 1s;
+			border-radius: 100px;
+			border: 1px transparent solid;
+			&:hover {
+				border: 1px solid $white;
+			}
+		}
+		
+	}
+
 	#gradient {
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-image: linear-gradient(to top, rgba(30, 84, 234, 0.4), #0044ff);
+		background-image: linear-gradient(to top, rgba(30, 84, 234, 0), rgb(0, 68, 255));
 	}
 	.row {
-
 		height: 100%;
 		#left {
 			padding-left: 20px;
@@ -143,6 +171,9 @@ section.splash-screen {
 					text-align: left;
 					align-self: center;
 					margin: auto;
+					img {
+						height: 35px;
+					}
 					@media (max-width: 991.999999px) {
 						margin-top: 100px;
 						.badges {
@@ -200,9 +231,6 @@ section.bubble-around {
 		align-self: auto;
 		width: 580px;
 
-		// @media (max-width: 1199.999999px) and (min-width: 992px){
-		// 	width: 60vw;
-		// }
 		@media (max-width: 991.9999999px) and (min-width: 768px) {
 			width: 50%;
 		}
