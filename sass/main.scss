@@ -144,9 +144,16 @@ section.splash-screen {
 			transition: 1s;
 			border-radius: 100px;
 			border: 1px transparent solid;
-			&:hover {
-				border: 1px solid $white;
+			@media (max-width: 450px){
+				padding-left: 5px;
+				padding-right: 5px;
 			}
+			&:hover, &.selected {
+				border: 1px solid transparent;
+				color: $black;
+				background-color: $white;
+			}
+			
 		}
 		
 	}
@@ -157,7 +164,7 @@ section.splash-screen {
 		height: 100%;
 		left: 0;
 		top: 0;
-		background-image: linear-gradient(to top, rgba(30, 84, 234, 0), rgb(0, 68, 255));
+		background-image: linear-gradient(to top, rgba(30, 84, 234, 0), $electric-blue);
 	}
 	.row {
 		height: 100%;
@@ -338,5 +345,80 @@ footer {
 	.row .item {
 		display: inline-block;
 	}
+
+}
+
+
+
+
+
+
+////////////////////////////////////
+// TEAM PAGE
+///////////////
+
+
+.container-fluid.team {
+
+	section.splash-screen, section.quote, section.team-grid {
+		margin-bottom:  250px;
+	}
+
+	section.splash-screen {
+		height: 500px;
+		@media (max-width: 991.9999999px) {
+			height: 90vh;
+		}
+		#gradient {
+			background-color: $electric-blue;
+		}
+	}
+
+	section.quote {
+		blockquote {
+			font-size: 25px;
+			font-weight: 500;
+			border-left: transparent;
+			text-align: center;
+		}
+		p {
+			font-size: 25px;
+			font-weight: 500;
+			// text-align: 
+			text-align: center;
+		}
+	}
+
+	section.team-grid {
+		.person {
+			// padding-right: 40px;
+			height: 600px;
+		}
+		h2 {
+			color: $black;
+			font-size: 30px;
+			font-weight: 500;
+			letter-spacing: -0.8px;
+			margin: 0;
+		}
+		h3 {
+			color: $black;
+			font-size: 20px;
+			font-weight: regular;
+			letter-spacing: -0.7px;
+			margin-top: 0;
+			margin-bottom: 6px;
+		}
+		p{
+			color: $black;
+			font-size: 14px;
+			font-weight: regular;
+		}
+	}
+
+
+
+
+
 
 }
