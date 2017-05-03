@@ -1,109 +1,213 @@
 <!doctype html>
-
 <html lang="en">
-<head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P56LNS9');</script>
-  <!-- End Google Tag Manager -->
-  <!-- Inbox Messenger at 2016 Sep. -->
-  <meta charset="utf-8">
-  <title>Inbox Messenger</title>
-	<link rel='shortcut icon' href='dist/images/logo.png' type='image/x-icon'/ >
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta property="og:url"                content="http://www.inboxtheapp.com" />
-	<meta property="og:type"               content="article" />
-	<meta property="og:title"              content="Inbox Messenger" />
-	<meta property="og:site_name"          content="Inbox Messenger" />
-	<meta property="og:description"        content="Inbox is a chatrooms app for talking about anything with anyone, instantly. Join chatrooms with friends and friends-of-friends to meet new people and talk about what's going on now." />
-	<meta property="og:image"              content="https://www.inboxtheapp.com/dist/images/web_preview_image.jpg" />
-	<meta property="fb:app_id"               content="1377136119169766" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="dist/css/main.css">
-	<!-- Google Analytics -->
-	<script>
-	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	    ga('create', 'UA-89882200-1', 'auto');
-	    ga('send', 'pageview');
-	</script>
-	<!-- End Google Analytics -->
-</head>
+   <head>
+      <meta charset="utf-8">
+      <title>Inbox Messenger</title>
+      <link rel='shortcut icon' href='dist/images/logo.png' type='image/x-icon'/>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta property="og:url"                content="http://www.inboxtheapp.com" />
+      <meta property="og:type"               content="article" />
+      <meta property="og:title"              content="Inbox Messenger" />
+      <meta property="og:site_name"          content="Inbox Messenger" />
+      <meta property="og:description"        content="Inbox is a chatrooms app for talking about anything with anyone, instantly. Join chatrooms with friends and friends-of-friends to meet new people and talk about what's going on now." />
+      <meta property="og:image"              content="https://www.inboxtheapp.com/dist/images/web_preview_image.jpg" />
+      <meta property="fb:app_id"               content="1377136119169766" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="dist/css/main.css">
+      <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+      <!-- <script src=" /> -->
+   </head>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <section class="splash-screen">
+               <div id="gradient"></div>
+               <div class="site-title">
+                <a href="http://inboxtheapp.com/"><img src="img/inbox.png" srcset="img/inbox@2x.png 2x, img/inbox@3x.png 3x" class="inbox"/></a>
+               </div>
 
-<body>
-  <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P56LNS9"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-  <!-- body content -->
-  <div id="background-curtain"></div>
+               <div class="web-app-btns">
+                <a href="https://web.inboxtheapp.com" target="_blank"><button id="login">Login</button></a>
+                <a href="https://web.inboxtheapp.com" target="_blank"><button id="signup">Sign Up</button></a>
+                <!-- <a href="team/index.html"><button id="team">About Us</button></a> -->
+               </div>
 
+               <div class="social-media hidden-xs">
+                 <a href="https://www.facebook.com/inboxtheapp/" target="_blank"><img src="img/facebook-icon.svg" class="facebook-icon"></a>
+                 <a href="https://medium.com/@InboxMessenger" target="_blank"><img src="img/medium-icon.svg" class="medium-icon"></a>
+                 <a href="https://twitter.com/inboxmessenger?lang=en" target="_blank"><img src="img/twitter-icon.svg" class="twitter-icon"></a>
+               </div>
 
-    <nav>
-      <div>
+               <div class="row">
+                  <div id="left" class="col-xs-12 col-md-7">
+                     <div class="text-block">
+                        <h1>Every neighborhood gets a chat room</h1>
+                        <h3>Explore your city & discover new rooms!</h3>
+                        <div class="badges">
+                           <a href="http://inbx.in/1xfjFQ7" target="_blank"><img src="img/badge-app-store-blue.png"></a>
+                           <a href="http://inbx.in/1Isazkp" target="_blank"><img src="img/badge-google-play-blue.png"></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="right" class="col-xs-12 col-md-5">
+                     <img src="img/iphone.png"
+                        srcset="img/iphone@2x.png 2x,
+                        img/iphone@3x.png 3x"
+                        class="iphone img-responsive">
+                  </div>
+               </div>
+            </section>
+            <section class="bubble-around introduction">
+               <div class="row">
+                  <img src="img/animal-avatars.png"
+                     srcset="img/animal-avatars@2x.png 2x,
+                     img/animal-avatars@3x.png 3x"
+                     class="animal-avatars img-responsive hidden-xs"/>
+                  <div class="text-block">
+                     <h2>Talking with people around you has never been easier.</h2>
+                     <h3>Inbox lets you talk to people around you super easily, just hop in the Nearby chatroom or send a message to the person you want to talk to, feeling shy? Send a wave. It is the best way to start a conversation.</h3>
+                  </div>
+               </div>
+            </section>
+            <section class="about-screenshots">
+               <div id="inside-nearby" class="screenshot-section">
+                  <div class="row">
+                     <div class="text-block">
+                        <h2>Share Unlimited Photos, Videos, and Audio</h2>
+                        <h3>Send as many media messages as you want, all lightning fast!</h3>
+                     </div>
+                     <img src="img/inchatroom-screenshot.png"
+                        srcset="img/inchatroom-screenshot@2x.png 2x,
+                        img/inchatroom-screenshot@3x.png 3x"
+                        class="inchatroom-screenshot screenshots">
+                  </div>
+               </div>
+               <div id="inside-dm" class="screenshot-section">
+                  <div class="row">
+                     <div class="text-block">
+                        <h2>Send Direct Messages</h2>
+                        <h3>Message new friends one-on-one or in group chats!</h3>
+                     </div>
+                     <img src="img/in-dm-screenshot.png"
+                        srcset="img/in-dm-screenshot@2x.png 2x,
+                        img/in-dm-screenshot@3x.png 3x"
+                        class="in-dm-screenshot screenshots">
+                  </div>
+               </div>
+            </section>
+            <section class="bubble-around more-features">
+               <div class="row">
+                  <img src="img/feature-bubbles.png"
+                     srcset="img/feature-bubbles@2x.png 2x,
+                     img/feature-bubbles@3x.png 3x"
+                     class="feature-bubbles hidden-xs">
+                  <div class="text-block">
+                     <h2>Discover More Features!</h2>
+                     <h3>Unsend and delete messages, send GIFs and drawings, tweet your chats, and more!</h3>
+                  </div>
+               </div>
+            </section>
+            <section class="prefooter">
+               <div class="row">
+                  <h1 class="col-xs-10 col-xs-offset-1">Inbox is available for iOS and Android today!</h1>
+                  <div class="badge-group col-xs-12 col-md-6 col-md-offset-3">
+                    <a href="http://inbx.in/1xfjFQ7" target="_blank"> <img src="img/badge-app-store.png"
+                        srcset="img/badge-app-store@2x.png 2x,
+                        img/badge-app-store@3x.png 3x"
+                        class="badge-app-store"> </a>
+                    <a href="http://inbx.in/1Isazkp" target="_blank"> <img src="img/badge-google-play.png"
+                        srcset="img/badge-google-play@2x.png 2x,
+                        img/badge-google-play@3x.png 3x"
+                        class="badge-google-play"> </a>
+                  </div>
+               </div>
+            </section>
+            <footer class="footer">
+               <div class="row">
+                  <h1>Press</h1>
+                  <a href="mailto:press@inboxtheapp.com" target="_blank">press@inboxtheapp.com</a>
+                  <h3>
+                     <a href="downloadable/PressKit-Inbox.zip">
+                     Press Kit</a>
+                  </h3>
+               </div>
+               <div class="row">
+                  <h1>Contact</h1>
+                  <div class="item col-xs-12 col-md-2 col-md-offset-3">
+                     <h2>General</h2>
+                     <h3>
+                     <a href="mailto:info@inboxtheapp.com" target="_blank">info@inboxtheapp.com</a>
+                     </h3>
+                  </div>
+                  <div class="item col-xs-12 col-md-2">
+                     <h2>Jobs</h2>
+                     <h3>
+                     <a href="mailto:jobs@inboxtheapp.com" target="_blank">jobs@inboxtheapp.com</a>
+                     </h3>
+                  </div>
+                  <div class="item col-xs-12 col-md-2">
+                     <h2>Support</h2>
+                     <h3>
+                     <a href="mailto:support@inboxtheapp.com" target="_blank">support@inboxtheapp.com</a>
+                     </h3>
+                  </div>
+               </div>
 
-        <div class="logo text-left">
-          <img src="dist/images/logo.png" id="logo" data-rjs="3"/>
-          <span><h1>Inbox Messenger</h1></span>
-        </div>
+               <div class="row">
+                  <h1>Find Us On</h1>
+                  <a href="https://www.facebook.com/inboxtheapp/" target="_blank"><img src="img/facebook-icon.svg" class="facebook-icon"></a>
+                  <a href="https://medium.com/@InboxMessenger" target="_blank"><img src="img/medium-icon.svg" class="medium-icon"></a>
+                  <a href="https://twitter.com/inboxmessenger?lang=en" target="_blank"><img src="img/twitter-icon.svg" class="twitter-icon"></a>
+               </div>
 
-        <div class="login-link text-right">
-          <a class="button hidden-xs" href="https://web.inboxtheapp.com/">Sign Up</a>
-          <a class="button" href="https://web.inboxtheapp.com/">Login</a>
-        </div>
-
+               <div class="row">
+                  <h6>2017 Inbox Inc.</h6>
+               </div>
+            </footer>
+         </div>
       </div>
-    </nav>
+      <!-- body content ends -->
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.0/retina.min.js"></script>
+      <script type="text/javascript">
+         module = {};
+         (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})
+         (window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+         branch.init('key_live_petma0ajo0wKgSU4n8RMlokkqwngTlZ8')
+         branch.banner({
+           icon: 'https://media.inboxtheapp.com/us-east-1/media/ebf2a92b-0de1-454f-8685-8e67248fa7f8',
+           title: 'Inbox Messenger',
+         openAppButtonText: 'Open',
+         downloadAppButtonText: 'Download',
+         sendLinkText: 'Send Link',
+           description: 'Download the app to create chatrooms',
+           showiOS: true,
+           showiPad: true,
+           showAndroid: true,
+           showBlackberry: false,
+           showWindowsPhone: false,
+           showKindle: false,
+           showDesktop: true,
+           iframe: true,
+           disableHide: false,
+           forgetHide: 1,
+           respectDNT: false,
+           mobileSticky: true,
+           desktopSticky: true,
+           make_new_link: false,
+           open_app: false,
+         })
+      </script>
+      <script>
+         retinajs();
+      </script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+      <script type="text/javascript">
+        skrollr.init();
+      </script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script> -->
+      <!-- <script src="dist/scripts/backDraw.js"></script> -->
 
-
-  <div class="container">
-
-    <section id="main" class="row text-left">
-      <div class="col-xs-12">
-        <h2>Chatrooms for Everything</h2>
-        <h3>Join a chatroom and talk about anything with anyone, instantly.</h3>
-        <div id="badges">
-          <a href="http://inbx.in/1Isazkp" target="_blank"><img src="dist/images/google-play-badge.png" data-rjs="3"/></a>
-          <a href="http://inbx.in/1xfjFQ7" target="_blank"><img src="dist/images/download links.png" data-rjs="3"/></a>
-        </div>
-      </div>
-
-      <div class="col-xs-12 text-right">
-        <img src="dist/images/devices.png" id="phones-pic" class="img-responsive" data-rjs="3">
-      </div>
-
-    </section>
-
-
-
-  </div>
-
-
-
-
-
-  <footer class="footer">
-    <div class="row">
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>General</h6><p><a href="mailto:info@inboxtheapp.com">info@inboxtheapp.com</a></p></span>
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Press</h6><p><a href="mailto:press@inboxtheapp.com">press@inboxtheapp.com</a></p></span>
-      <span class="col-xs-12 col-sm-6 col-md-3"><h6>Support</h6><p><a href="mailto:support@inboxtheapp.com">support@inboxtheapp.com</a></p></span>
-      <span class="col-xs-12 col-sm-6 col-md-3">© 2016 Inbox inc. All rights reserved</span>
-    </div>
-  </footer>
-
-  <!-- body content ends -->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/2.1.0/retina.min.js"></script>
-  <script>
-    retinajs();
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.min.js"></script>
-  <script src="dist/scripts/backDraw.js"></script>
-</body>
+   </body>
 </html>
