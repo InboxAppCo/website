@@ -34,7 +34,7 @@ gulp.task('lint', function(){
 });
 
 gulp.task('images', function(){
-  return gulp.src('images/**/*.+(png|jpg|gif|svg)')
+  return gulp.src('img/**/*.+(png|jpg|gif|svg)')
   .pipe(cache(imagemin({
       interlaced: true
     })))
@@ -52,5 +52,5 @@ gulp.task('watch', function(){
   // gulp.watch('scripts/*.js', ['lint']);
   gulp.watch('gulpfile.js', ['lint']);
   gulp.watch('scripts/*.js', ['compress']);
-  gulp.watch('images/*.+(png|jpg|gif|svg)', ['images']);
+  gulp.watch('img/*.+(png|jpg|gif|svg)', ['images']);
 });
